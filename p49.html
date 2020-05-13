@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>p49</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+var vec=[];
+var f;
+for(f=0;f<10;f++)
+{
+var valor=parseInt(Math.random()*1000);
+vec.push(valor);
+}
+document.write('estos son antes de borrar los numeros que son pares en la lista:<br>');
+for(f=0;f<10;f++)
+{
+document.write(vec[f]+'<br>');
+}
+for(f=0;f<10;f=f+2)
+{
+delete vec[f];
+}
+document.write('y aqui estan si borramos los pares:<br>');
+for(f=0;f<10;f++)
+{
+document.write(vec[f]+'<br>');
+}
+</script>
+
+</body>
+</html>
